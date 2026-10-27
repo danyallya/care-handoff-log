@@ -1,0 +1,1 @@
+export const projectInfo = { slug:"care-handoff-log", title:"Care Handoff Log", summary:"A permission-limited record of care tasks, medication handoffs and the next check-in.", scope:"care-log", locale:"en", direction:"ltr", firstTask:"Record a non-clinical handoff with who, when and what remains.", entity:"handoffs" } as const;
