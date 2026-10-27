@@ -4,8 +4,8 @@ Prioritize user risk and evidence over polish. Estimates are focused engineering
 
 ## P0 — safe foundation
 
-- [ ] CARE-LOG-001 — Record a non-clinical handoff with who, when and what remains.
-- [ ] CARE-LOG-002 — Validate handoffs and add empty/error/deletion states.
+- [x] CARE-LOG-001 — Record a non-clinical handoff with who, when and what remains.
+- [x] CARE-LOG-002 — Validate handoffs and add empty/error/deletion states.
 - [ ] CARE-LOG-003 — Add PostgreSQL migrations and repository tests.
 - [ ] CARE-LOG-004 — Specify offline conflicts, retry, duplicate-submit and recovery.
 
