@@ -1,21 +1,26 @@
 # Active task
 
-**ID:** CARE-LOG-001  
-**Title:** Record a non-clinical handoff with who, when and what remains.
+**ID:** CARE-LOG-003
+**Title:** Add PostgreSQL migrations and repository tests.
 
 ## Context
 
-The technical shell exists; the product workflow does not. Build the first safe, end-to-end domain slice for Care Handoff Log.
+The first workflow is a browser-local prototype. Define its server-side persistence boundary without implying authorization, consent verification or production readiness.
 
 ## Acceptance criteria
 
-- Type the handoffs domain record, validation rules and lifecycle.
-- Add a create/review flow that works without a server round-trip.
-- Persist a draft with Dexie and show saved, unsaved and sync state truthfully.
-- Test valid/invalid input, date/order boundaries and serialization.
-- Document retention, deletion and limitations of the offline slice.
-- Respect this guardrail: No diagnosis or treatment advice; minimize health data, require consent, revocation and audit.
+- Add versioned PostgreSQL migrations for the handoff and minimal audit data model.
+- Add repository operations and integration tests against a disposable database.
+- Preserve the non-clinical scope and collect no unnecessary health details.
+- Document migration, backup, deletion and test-database handling.
 
 ## Status
 
-Not started. Use handoff/001-care-log. After acceptance passes, update progress and set the next task.
+Not started. Use `handoff/care-log-003-postgres-repository` after CARE-LOG-001/002 is reviewed and merged.
+
+## Completed on the day-1 branch
+
+- CARE-LOG-001 — Record a non-clinical handoff with who, when and what remains.
+- CARE-LOG-002 — Validate handoffs and add empty, error and deletion states.
+
+Evidence: `docs/days/day-001.md`. Both tasks are complete locally, pending PR review and merge.
